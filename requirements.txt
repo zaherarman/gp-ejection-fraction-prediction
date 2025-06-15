@@ -1,0 +1,13 @@
+pip
+python-dotenv
+ruff
+-e .
+
+torch
+gpytorch
+numpy
+pandas
+matplotlib
+seaborn
+
+ucimlrepo
