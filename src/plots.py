@@ -9,11 +9,11 @@ def plot_gp_predictions():
     train_y = torch.load("train_y.pth")
 
     # Load predictions
-    data = torch.load("observed_pred.pth")
-    mean = data["mean"]
-    lower = data["lower"]
-    upper = data["upper"]
-    test_x = data["test_x"]
+    pred_data = torch.load("observed_pred.pth")
+    mean = pred_data["mean"]
+    lower = pred_data["lower"]
+    upper = pred_data["upper"]
+    test_x = pred_data["test_x"]
 
     # Flatten and convert to numpy
     x = test_x.squeeze().numpy()
